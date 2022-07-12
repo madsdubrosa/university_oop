@@ -1,19 +1,9 @@
-"""
-Docstring on Professor class
-"""
-
 
 import random
 from collections import defaultdict
 
 
 class Professor:
-    """
-    Professor:
-    --> id: str
-    --> name: str
-    --> courses: map of course_id : str TO course : Course
-    """
     def __init__(self, identifier, name):
         self.name = name.strip()
         self.id = identifier
