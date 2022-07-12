@@ -1,5 +1,5 @@
 
-from test_applications.oop.app_university.university import University
+from app_university.university import University
 
 
 def main():
@@ -46,21 +46,13 @@ def main():
     # REGISTER STUDENT FOR COURSE
     uni.register_students(["my134", "jn144"], "s1167")
     # uni.display_course_info("s1167")
-    # print(f"what is the student registered for Scaring 101? {uni.courses['s1167'].students['my134'].name}")
-    # print(f"what course is Mike Lazowsky registered for? {uni.students['my134'].current_courses['s1167'].name}")
-
-    # List comprehension -- IGNORE
-    # students = uni.profs["ge184"].get_students_for_course("s1167")  # [Student1, Student2]
-    # student_names = [s.name for s in students]
-    # print(", ".join(student_names))
+    
 
     # GRADE ASSIGNMENT
     uni.new_semester("S2014")
     print(uni.students["my134"].transcript)
     print(uni.students["jn144"].transcript)
-    # uni.students["my134"].transcript["F2013"]["s1167"][0].display_info()
     uni.students["my134"].transcript["F2013"]["s1167"][0].students["jn144"].display_info()
-    # uni --> students --> mike --> transcript --> course --> students --> john
 
 
 main()
