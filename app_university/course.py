@@ -1,7 +1,3 @@
-"""
-Docstring on Course class
-"""
-
 
 class Course:
     """
