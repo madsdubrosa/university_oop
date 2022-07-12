@@ -1,7 +1,3 @@
-"""
-Docstring about Major class
-"""
-
 
 class Major:
     def __init__(self, identifier, name, required_courses=[]):
