@@ -1,12 +1,8 @@
-"""
-Docstring on University class
-"""
 
-
-from test_applications.oop.app_university.course import Course
-from test_applications.oop.app_university.major import Major
-from test_applications.oop.app_university.professor import Professor
-from test_applications.oop.app_university.student import Student
+from app_university.course import Course
+from app_university.major import Major
+from app_university.professor import Professor
+from app_university.student import Student
 
 
 class University:
@@ -86,9 +82,6 @@ class University:
         if not major:
             print(f"ERROR: major with id {major_id} not found")
             return
-        # if course is None or major is None:
-        #     print("invalid course and/or major")
-        #     return
         course.add_to_major(major)
         self.courses[course.id] = course
         self.majors[major.id] = major
