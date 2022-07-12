@@ -1,7 +1,3 @@
-"""
-Docstring on Student class
-"""
-
 
 from collections import defaultdict
 
